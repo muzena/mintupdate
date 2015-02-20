@@ -284,4 +284,6 @@ class Assistant:
         self.assistant.set_page_complete(self.vbox_summary, True)
 
 Assistant()
-Gtk.main()
+gtk.gdk.threads_enter()
+gtk.main()
+gtk.gdk.threads_leave()
